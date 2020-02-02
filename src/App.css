@@ -32,7 +32,7 @@
   max-width: 768px;
   min-height: 500px;
   overflow: hidden;
-  padding: 50px;
+  padding: 20px;
   margin: auto;
 }
 
@@ -43,10 +43,10 @@
   max-width: 200px;
   background-color: #eeeded;
   padding: 16px;
+  position: relative;
 }
 
 .flexbox .list .card {
-  padding: 8px;
   background-color: #4885ed;
   cursor: pointer;
   margin-bottom: 16px;
@@ -131,6 +131,20 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+.add {
+  padding: 8px;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px #e0e0e0;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4885ed;
 }
 @keyframes App-logo-spin {
   from {
