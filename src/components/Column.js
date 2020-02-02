@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import PropTypes from "prop-types";
 import Card from "./Card";
 
-function Column({ id, title, className, cards, onCardMove, setHiddenCard }) {
+function Column({ id, title, cards, onCardMove, setHiddenCard }) {
   const hiddenCard = useCallback(() => {
     setHiddenCard(true);
   }, [setHiddenCard]);
@@ -17,7 +17,7 @@ function Column({ id, title, className, cards, onCardMove, setHiddenCard }) {
         onCardMove(cardIndex, parentId, event.target.id);
       }
     },
-    [onCardMove, className]
+    [onCardMove]
   );
 
   const onDragOver = useCallback((event) => {
